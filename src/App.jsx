@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
 import ScrollToTopButton from './components/ScrollToTop';
 
+// Pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -42,7 +43,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/your-repo-name">
       <AnimatePresence>
         {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
       </AnimatePresence>
