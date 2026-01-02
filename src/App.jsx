@@ -43,7 +43,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <BrowserRouter basename="/your-repo-name">
+    <BrowserRouter basename="minhajuddinali/Ammar">
       <AnimatePresence>
         {loading && <LoadingScreen onComplete={() => setLoading(false)} />}
       </AnimatePresence>
